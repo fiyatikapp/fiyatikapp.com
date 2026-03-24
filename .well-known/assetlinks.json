@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.pathev.fiyatik",
+      "sha256_cert_fingerprints": [
+        "B3:1C:42:21:BE:38:10:F1:BD:9F:ED:E3:62:31:F9:72:D8:DB:91:C7:BB:AD:71:B6:19:DD:72:D2:AE:64:CE:82"
+      ]
+    }
+  }
+]
