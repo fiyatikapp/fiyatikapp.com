@@ -5,7 +5,7 @@
 
 /* Genel metin rengi daha koyu */
 body, input, select, textarea {
-    color: #212121;
+    color: #212121 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
