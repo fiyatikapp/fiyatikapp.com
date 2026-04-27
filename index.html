@@ -5,75 +5,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/fiyatik.css" />
 		<link rel="icon" type="image/png" href="images/icon.png" />
 		<style>
-			/* =============================================
-			   FIYATIK RENK PALETİ
-			   ============================================= */
-			:root {
-				--fiyatik-purple: #7B2FBE;
-				--fiyatik-purple-dark: #5a1f8a;
-				--fiyatik-purple-light: #9b4fd8;
-				--fiyatik-green: #00C853;
-				--fiyatik-dark: #0f0520;
-				--fiyatik-text: #2d2d2d;
-				--fiyatik-text-light: #555555;
-			}
-
-			/* =============================================
-			   BANNER — mor gradient, görselsiz
-			   ============================================= */
-			#banner {
-				background: linear-gradient(135deg, #0f0520 0%, #4a1a8e 45%, #7B2FBE 65%, #1a0a2e 100%) !important;
-				background-image: none !important;
-			}
-			#banner h2 {
-				color: #ffffff;
-				text-shadow: 0 2px 20px rgba(123, 47, 190, 0.8);
-				font-size: 3.5em;
-				letter-spacing: 4px;
-			}
-			#banner p {
-				color: rgba(255,255,255,0.92);
-				font-size: 1.2em;
-				line-height: 1.8;
-			}
-
-			/* =============================================
-			   BUTONLAR
-			   ============================================= */
-			.button.primary {
-				background-color: var(--fiyatik-purple) !important;
-				border-color: var(--fiyatik-purple) !important;
-				color: #ffffff !important;
-				font-weight: 700;
-				letter-spacing: 1px;
-			}
-			.button.primary:hover {
-				background-color: var(--fiyatik-purple-dark) !important;
-				border-color: var(--fiyatik-purple-dark) !important;
-			}
-			.button:not(.primary) {
-				border-color: rgba(255,255,255,0.6) !important;
-				color: rgba(255,255,255,0.9) !important;
-			}
-			.button:not(.primary):hover {
-				border-color: #ffffff !important;
-				color: #ffffff !important;
-			}
-			/* Nav butonu */
-			#header nav .button {
-				border-color: var(--fiyatik-purple) !important;
-				color: var(--fiyatik-purple) !important;
-			}
-			#header nav .button:hover {
-				background-color: var(--fiyatik-purple) !important;
-				color: #ffffff !important;
-			}
-
-			/* =============================================
-			   HEADER
-			   ============================================= */
+			/* Header logo */
 			.header-logo {
 				display: flex;
 				align-items: center;
@@ -86,165 +21,33 @@
 				border-radius: 8px;
 			}
 
-			/* =============================================
-			   GENEL METİN OKUNAKLILIĞı
-			   ============================================= */
-			body {
-				color: var(--fiyatik-text);
-			}
-			h1, h2, h3, h4 {
-				color: #1a0a2e;
-			}
-			p {
-				color: var(--fiyatik-text-light);
-				line-height: 1.8;
-				font-size: 1.05em;
-			}
-			.box {
-				border-color: rgba(123, 47, 190, 0.15);
-			}
-			.box h2, .box h3 {
-				color: #1a0a2e;
-			}
-			.box p {
-				color: #444444;
-			}
-
-			/* =============================================
-			   İKONLAR — mor tonları
-			   ============================================= */
-			.icon.major {
-				color: var(--fiyatik-purple) !important;
-				border-color: rgba(123, 47, 190, 0.2) !important;
-				background-color: rgba(123, 47, 190, 0.08) !important;
-			}
-
-			/* =============================================
-			   CTA BÖLÜMÜ
-			   ============================================= */
-			#cta {
-				background: linear-gradient(135deg, #1a0a2e 0%, #4a1a8e 50%, #1a0a2e 100%) !important;
-				background-image: none !important;
-			}
-			#cta h2 {
-				color: #ffffff !important;
-				font-size: 2.2em;
-			}
-			#cta p {
-				color: rgba(255,255,255,0.88) !important;
-				font-size: 1.1em;
-			}
-			#cta strong {
-				color: #ffffff;
-			}
-			#cta .button.primary {
-				background-color: #ffffff !important;
-				border-color: #ffffff !important;
-				color: var(--fiyatik-purple) !important;
-				font-weight: 700;
-			}
-			#cta .button.primary:hover {
-				background-color: rgba(255,255,255,0.9) !important;
-			}
-
-			/* =============================================
-			   FOOTER
-			   ============================================= */
-			#footer {
-				background: #0f0520;
-			}
-			#footer .copyright li {
-				color: rgba(255,255,255,0.5);
-			}
-			#footer .copyright a {
-				color: rgba(255,255,255,0.7);
-			}
-
-			/* =============================================
-			   ZIKZAK DÜZEN
-			   ============================================= */
-			.zigzag-section {
-				margin-bottom: 3em;
-			}
+			/* Zikzak düzen */
+			.zigzag-section { margin-bottom: 3em; }
 			.zigzag-row {
 				display: flex;
 				align-items: center;
 				gap: 3em;
 				margin-bottom: 4em;
 			}
-			.zigzag-row.reverse {
-				flex-direction: row-reverse;
-			}
-			.zigzag-image {
-				flex: 0 0 260px;
-				max-width: 260px;
-			}
+			.zigzag-row.reverse { flex-direction: row-reverse; }
+			.zigzag-image { flex: 0 0 260px; max-width: 260px; }
 			.zigzag-image img {
 				width: 100%;
 				border-radius: 24px;
 				box-shadow: 0 24px 64px rgba(123, 47, 190, 0.2);
 				display: block;
 			}
-			.zigzag-content {
-				flex: 1;
-			}
-			.zigzag-content .icon {
-				display: block;
-				margin-bottom: 0.6em;
-			}
-			.zigzag-content h3 {
-				margin-bottom: 0.5em;
-				font-size: 1.5em;
-				color: #1a0a2e;
-			}
-			.zigzag-content p {
-				color: #444;
-				line-height: 1.8;
-			}
+			.zigzag-content { flex: 1; }
+			.zigzag-content .icon { display: block; margin-bottom: 0.6em; }
+			.zigzag-content h3 { margin-bottom: 0.5em; font-size: 1.5em; }
+			.zigzag-content p { line-height: 1.8; }
 
-			/* =============================================
-			   MAĞAZALAR BÖLÜMÜ
-			   ============================================= */
-			.stores-box {
-				text-align: center;
-				padding: 2.5em;
-				background: linear-gradient(135deg, rgba(123,47,190,0.05), rgba(123,47,190,0.1));
-			}
-			.stores-box h3 {
-				color: #1a0a2e;
-				font-size: 1.6em;
-				margin-bottom: 0.4em;
-			}
-			.stores-box p {
-				font-size: 1.1em;
-				color: #555;
-				margin: 0;
-			}
-
-			/* =============================================
-			   HEADER MAJOR BAŞLIK
-			   ============================================= */
-			.box.special header.major h2 {
-				color: #1a0a2e;
-				font-size: 2em;
-			}
-			.box.special header.major p {
-				color: #555;
-				font-size: 1.05em;
-			}
+			/* Mağazalar */
+			.stores-box { text-align: center; padding: 2.5em; }
 
 			@media screen and (max-width: 768px) {
-				.zigzag-row, .zigzag-row.reverse {
-					flex-direction: column;
-				}
-				.zigzag-image {
-					flex: none;
-					max-width: 220px;
-					margin: 0 auto;
-				}
-				#banner h2 {
-					font-size: 2.4em;
-				}
+				.zigzag-row, .zigzag-row.reverse { flex-direction: column; }
+				.zigzag-image { flex: none; max-width: 220px; margin: 0 auto; }
 			}
 		</style>
 	</head>
