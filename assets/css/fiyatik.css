@@ -4,20 +4,11 @@
 
 /* Genel metin rengi daha koyu */
 body, input, select, textarea {
-    color: #555;
+    color: #333;
 }
 
-/* Açıklama metinleri - koyu siyah */
-p,
-li,
-span:not(.button):not(.icon),
-div:not(.button):not(.icon):not(#banner):not(#cta) {
-    color: #000000;
-}
-
-/* Başlıklar */
 h1, h2, h3, h4, h5, h6 {
-    color: #2a0a5e;
+    color: #1a0a2e;
 }
 
 /* Linkler */
@@ -86,10 +77,8 @@ input[type="button"].primary:active,
     text-shadow: 0 2px 20px rgba(123, 47, 190, 0.6);
 }
 
-#banner p,
-#banner li,
-#banner span {
-    color: #ffffff !important;
+#banner p {
+    color: rgba(255,255,255,0.92) !important;
 }
 
 /* Banner butonları */
@@ -137,10 +126,8 @@ input[type="button"].primary:active,
     color: #ffffff !important;
 }
 
-#cta p,
-#cta li,
-#cta span {
-    color: #ffffff !important;
+#cta p {
+    color: rgba(255,255,255,0.88) !important;
 }
 
 #cta strong {
@@ -199,7 +186,7 @@ input[type="button"].primary:active,
 /* header.major p border */
 header.major p {
     border-top-color: rgba(123,47,190,0.3);
-    color: #555;
+    color: #333;
 }
 
 /* body.landing #main margin ayarı */
