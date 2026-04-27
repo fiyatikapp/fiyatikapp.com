@@ -193,3 +193,37 @@ header.major p {
 body.landing #main {
     margin-top: -10em;
 }
+
+/* Tüm metin elementleri koyu */
+p, li, span, div, td, th, label {
+    color: #333 !important;
+}
+
+header p {
+    color: #444 !important;
+}
+
+header.major p {
+    color: #444 !important;
+}
+
+.box p {
+    color: #333 !important;
+}
+
+.zigzag-content p {
+    color: #333 !important;
+}
+
+/* Banner ve CTA metinleri beyaz kalsın */
+#banner p, #banner h2, #banner h3 {
+    color: rgba(255,255,255,0.92) !important;
+}
+
+#cta p, #cta h2, #cta h3 {
+    color: rgba(255,255,255,0.88) !important;
+}
+
+#footer .copyright, #footer .copyright li, #footer .copyright a {
+    color: rgba(255,255,255,0.5) !important;
+}
