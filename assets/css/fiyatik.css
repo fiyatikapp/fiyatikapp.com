@@ -167,3 +167,20 @@ body.landing #main {
     .zigzag-row, .zigzag-row.reverse { flex-direction: column; }
     .zigzag-image { flex: none; max-width: 220px; margin: 0 auto; }
 }
+
+/* Başlıklar - koyu mor, kalın */
+.zigzag-content h3,
+.box.special h2,
+.box.special h3,
+.stores-box h3 {
+    color: #4a1a8e !important;
+    font-weight: 600 !important;
+}
+
+/* Metin daha koyu */
+.box.special p,
+.zigzag-content p,
+.stores-box p,
+header.major p {
+    color: #333 !important;
+}
