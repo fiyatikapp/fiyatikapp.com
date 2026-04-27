@@ -3893,6 +3893,215 @@
 
 			#cta {
 				padding: 2.5em 1em 3em 1em;
+				/* ============================================================
+   FİYATİK TEMA OVERRİDE - main.css sonuna ekle
+   ============================================================ */
+
+/* Genel metin rengi daha koyu */
+body, input, select, textarea {
+    color: #555;
+}
+
+/* Açıklama metinleri - koyu siyah */
+p,
+li,
+span:not(.button):not(.icon),
+div:not(.button):not(.icon):not(#banner):not(#cta) {
+    color: #222222;
+}
+
+/* Başlıklar */
+h1, h2, h3, h4, h5, h6 {
+    color: #2a0a5e;
+}
+
+/* Linkler */
+a {
+    color: #7B2FBE;
+}
+
+/* Primary buton - mor */
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary,
+.button.primary {
+    background-color: #7B2FBE !important;
+    color: #ffffff !important;
+}
+
+input[type="submit"].primary:hover,
+input[type="reset"].primary:hover,
+input[type="button"].primary:hover,
+.button.primary:hover {
+    background-color: #5a1f8a !important;
+}
+
+input[type="submit"].primary:active,
+input[type="reset"].primary:active,
+input[type="button"].primary:active,
+.button.primary:active {
+    background-color: #4a1a70 !important;
+}
+
+/* İkon accent renkleri - mor tonları */
+.icon.major {
+    background: #7B2FBE;
+    color: #ffffff;
+}
+
+.icon.major.accent2 {
+    background: #7B2FBE;
+    color: #ffffff;
+}
+
+.icon.major.accent3 {
+    background: #9b4fd8;
+    color: #ffffff;
+}
+
+.icon.major.accent4 {
+    background: #6020a0;
+    color: #ffffff;
+}
+
+.icon.major.accent5 {
+    background: #00C853;
+    color: #ffffff;
+}
+
+/* Banner - mor gradient, görselsiz */
+#banner {
+    background-image: none !important;
+    background: linear-gradient(135deg, #0f0520 0%, #3a1070 40%, #7B2FBE 70%, #1a0a2e 100%) !important;
+    color: #fff;
+}
+
+#banner h2 {
+    color: #ffffff !important;
+    text-shadow: 0 2px 20px rgba(123, 47, 190, 0.6);
+}
+
+#banner p,
+#banner li,
+#banner span {
+    color: #ffffff !important;
+}
+
+/* Banner butonları */
+#banner input[type="submit"],
+#banner input[type="reset"],
+#banner input[type="button"],
+#banner .button {
+    background-color: transparent !important;
+    box-shadow: inset 0 0 0 2px rgba(255,255,255,0.6) !important;
+    color: #fff !important;
+}
+
+#banner input[type="submit"]:hover,
+#banner input[type="reset"]:hover,
+#banner input[type="button"]:hover,
+#banner .button:hover {
+    background-color: rgba(255,255,255,0.15) !important;
+}
+
+#banner input[type="submit"].primary,
+#banner input[type="reset"].primary,
+#banner input[type="button"].primary,
+#banner .button.primary {
+    background: #ffffff !important;
+    color: #7B2FBE !important;
+    font-weight: 700 !important;
+    box-shadow: none !important;
+}
+
+#banner input[type="submit"].primary:hover,
+#banner input[type="reset"].primary:hover,
+#banner input[type="button"].primary:hover,
+#banner .button.primary:hover {
+    background: rgba(255,255,255,0.9) !important;
+    color: #5a1f8a !important;
+}
+
+/* CTA bölümü - koyu mor gradient */
+#cta {
+    background: linear-gradient(135deg, #1a0a2e 0%, #4a1a8e 50%, #1a0a2e 100%) !important;
+    color: rgba(255,255,255,0.9) !important;
+}
+
+#cta h2, #cta h3, #cta h4, #cta h5, #cta h6 {
+    color: #ffffff !important;
+}
+
+#cta p,
+#cta li,
+#cta span {
+    color: #ffffff !important;
+}
+
+#cta strong {
+    color: #ffffff !important;
+}
+
+#cta input[type="submit"],
+#cta input[type="reset"],
+#cta input[type="button"],
+#cta .button {
+    background: #ffffff !important;
+    color: #7B2FBE !important;
+    font-weight: 700 !important;
+    box-shadow: none !important;
+}
+
+#cta input[type="submit"]:hover,
+#cta input[type="reset"]:hover,
+#cta input[type="button"]:hover,
+#cta .button:hover {
+    background: rgba(255,255,255,0.9) !important;
+    color: #5a1f8a !important;
+}
+
+/* Header */
+#header {
+    background: #1a0a2e;
+}
+
+#header .button {
+    box-shadow: inset 0 0 0 2px rgba(255,255,255,0.4) !important;
+    color: #fff !important;
+}
+
+#header .button:hover {
+    background-color: rgba(123,47,190,0.4) !important;
+}
+
+/* Footer */
+#footer {
+    background: #0f0520;
+}
+
+#footer .copyright {
+    color: rgba(255,255,255,0.4);
+}
+
+#footer .copyright a {
+    color: rgba(255,255,255,0.6);
+}
+
+#footer .copyright li {
+    border-left-color: rgba(255,255,255,0.15);
+}
+
+/* header.major p border */
+header.major p {
+    border-top-color: rgba(123,47,190,0.3);
+    color: #555;
+}
+
+/* body.landing #main margin ayarı */
+body.landing #main {
+    margin-top: -10em;
+}
+
 			}
 
 	}
