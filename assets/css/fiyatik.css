@@ -12,7 +12,7 @@ p,
 li,
 span:not(.button):not(.icon),
 div:not(.button):not(.icon):not(#banner):not(#cta) {
-    color: #222222;
+    color: #000000;
 }
 
 /* Başlıklar */
