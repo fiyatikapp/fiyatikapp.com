@@ -5,109 +5,215 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="images/icon.png" />
+		<style>
+			/* Zikzak görsel-metin düzeni */
+			.zigzag-section {
+				margin-bottom: 3em;
+			}
+			.zigzag-row {
+				display: flex;
+				align-items: center;
+				gap: 3em;
+				margin-bottom: 4em;
+			}
+			.zigzag-row.reverse {
+				flex-direction: row-reverse;
+			}
+			.zigzag-image {
+				flex: 0 0 280px;
+				max-width: 280px;
+			}
+			.zigzag-image img {
+				width: 100%;
+				border-radius: 20px;
+				box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+				display: block;
+			}
+			.zigzag-content {
+				flex: 1;
+			}
+			.zigzag-content .icon {
+				display: block;
+				margin-bottom: 0.5em;
+			}
+			.zigzag-content h3 {
+				margin-bottom: 0.5em;
+			}
+			/* Mağazalar bölümü */
+			.stores-box {
+				text-align: center;
+				padding: 2em;
+			}
+			.stores-box p {
+				font-size: 1.1em;
+				margin: 0;
+			}
+			/* Header ikon */
+			.header-logo {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				text-decoration: none;
+			}
+			.header-logo img {
+				width: 32px;
+				height: 32px;
+				border-radius: 8px;
+			}
+			@media screen and (max-width: 768px) {
+				.zigzag-row, .zigzag-row.reverse {
+					flex-direction: column;
+				}
+				.zigzag-image {
+					flex: none;
+					max-width: 220px;
+					margin: 0 auto;
+				}
+			}
+		</style>
 	</head>
 	<body class="landing is-preload">
 		<div id="page-wrapper">
 
+			<!-- Header -->
 			<header id="header" class="alt">
-					<h1><a href="index.html">FİYATİK</a></h1>
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Ana Sayfa</a></li>
-							<li><a href="gizlilik.html" class="button">Gizlilik Politikası</a></li>
-						</ul>
-					</nav>
-				</header>
-
-			<section id="banner">
-					<h2>FİYATİK</h2>
-					<p>Alışverişte akıllı takip dönemi. Sizin yerinize tarar, indirimleri yakalar.</p>
-					<ul class="actions special">
-						<li><a href="#main" class="button primary">Çok Yakında Google Play'de</a></li>
-						<li><a href="gizlilik.html" class="button">Yasal Bilgiler</a></li>
+				<h1>
+					<a href="index.html" class="header-logo">
+						<img src="images/icon.png" alt="Fiyatik" />
+						FİYATİK
+					</a>
+				</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Ana Sayfa</a></li>
+						<li><a href="gizlilik.html" class="button">Gizlilik Politikası</a></li>
 					</ul>
-				</section>
+				</nav>
+			</header>
 
+			<!-- Banner -->
+			<section id="banner">
+				<h2>FİYATİK</h2>
+				<p>Alışverişte akıllı takip dönemi. Sizin yerinize tarar,<br />indirimleri ve stok değişimlerini yakalar.</p>
+				<ul class="actions special">
+					<li>
+						<a href="https://play.google.com/store/apps/details?id=com.pathev.fiyatik" target="_blank" class="button primary">
+							<i class="icon brands fa-google-play"></i>&nbsp; Google Play'den İndir
+						</a>
+					</li>
+					<li><a href="gizlilik.html" class="button">Yasal Bilgiler</a></li>
+				</ul>
+			</section>
+
+			<!-- Main -->
 			<section id="main" class="container">
 
-					<section class="box special">
-						<header class="major">
-							<h2>Alışverişin Bilimsel Haliyle Tanışın</h2>
-							<p>Fiyatik, favori ürünlerinizin fiyat değişimlerini gün boyu otonom olarak takip eder.<br />
-							Karmaşık piyasa koşullarında en doğru zamanda almanızı sağlar.</p>
-						</header>
-						<span class="image featured"><img src="images/pic01.jpg" alt="Fiyatik App Preview" /></span>
-					</section>
+				<!-- Giriş -->
+				<section class="box special">
+					<header class="major">
+						<h2>Alışverişin Bilimsel Haliyle Tanışın</h2>
+						<p>Fiyatik, favori ürünlerinizin fiyat ve stok değişimlerini gün boyu otonom olarak takip eder.<br />
+						Karmaşık piyasa koşullarında en doğru zamanda almanızı sağlar.</p>
+					</header>
+				</section>
 
-					<section class="box special features">
-						<div class="features-row">
-							<section>
+				<!-- Zikzak özellik bölümü -->
+				<section class="box special zigzag-section">
+					<div style="padding: 1em 2em;">
+
+						<!-- Hızlı Tarama -->
+						<div class="zigzag-row">
+							<div class="zigzag-image">
+								<img src="images/pic01.jpg" alt="Hızlı Tarama" />
+							</div>
+							<div class="zigzag-content">
 								<span class="icon solid major fa-bolt accent2"></span>
 								<h3>Hızlı Tarama</h3>
-								<p>Paylaştığınız ürün linkini saniyeler içinde analiz eder ve takibe başlar. Hiçbir fırsatı kaçırmazsınız.</p>
-							</section>
-							<section>
-								<span class="icon solid major fa-chart-area accent3"></span>
-								<h3>Hassas Analiz</h3>
-								<p>Fiyat değişimlerini detaylı grafiklerle sunar. Ürünün piyasa geçmişini şeffafça görebilirsiniz.</p>
-							</section>
+								<p>Ürün linkini paylaşmanız yeterli. Fiyatik otomatik olarak analiz eder, takibe başlar ve sizi haberdar eder. Türkiye'nin önde gelen e-ticaret sitelerinin tamamıyla uyumludur.</p>
+							</div>
 						</div>
-						<div class="features-row">
-							<section>
-								<span class="icon solid major fa-check-circle accent4"></span>
-								<h3>3 Aşamalı Doğrulama</h3>
-								<p>Fiyatı otomatik tarar, akıllı listeyle karşılaştırır ve gerekirse manuel eşleme imkanı sunarak hatayı sıfırlar.</p>
-							</section>
-							<section>
-								<span class="icon solid major fa-lock accent5"></span>
-								<h3>Güvenli Takip</h3>
-								<p>Verileriniz anonim olarak korunur. Sadece takip ettiğiniz ürünler ve fiyat hedefleriniz sizin için saklanır.</p>
-							</section>
-						</div>
-					</section>
 
-					<div class="row">
-						<div class="col-6 col-12-narrower">
-							<section class="box special">
-								<span class="image featured"><img src="images/pic02.jpg" alt="Plus Features" /></span>
+						<!-- Stok Takibi -->
+						<div class="zigzag-row reverse">
+							<div class="zigzag-image">
+								<img src="images/pic02.jpg" alt="Stok Takibi" />
+							</div>
+							<div class="zigzag-content">
+								<span class="icon solid major fa-bell accent3"></span>
+								<h3>Stok Takibi</h3>
+								<p>Ürün stoktan çıktığında anında haberdar olun. Plus üyeler "Gelince Haber Ver" özelliğiyle stok geldiğinde bildirim alır.</p>
+							</div>
+						</div>
+
+						<!-- Fiyatik Plus -->
+						<div class="zigzag-row">
+							<div class="zigzag-image">
+								<img src="images/pic03.jpg" alt="Fiyatik Plus" />
+							</div>
+							<div class="zigzag-content">
+								<span class="icon solid major fa-chart-area accent4"></span>
 								<h3>Fiyatik Plus</h3>
-								<p>Sınırları kaldırın. 10 ürün limitinden kurtulun ve premium grafik analizleriyle bir adım öne geçin.</p>
-							</section>
+								<p>Sınırları kaldırın. Sınırsız ürün takibi, saatlik tarama, stok bekleme modu ve premium grafik analizleriyle bir adım öne geçin.</p>
+							</div>
 						</div>
-						<div class="col-6 col-12-narrower">
-							<section class="box special">
-								<span class="image featured"><img src="images/pic03.jpg" alt="Smart Notifications" /></span>
+
+						<!-- Anlık Bildirimler -->
+						<div class="zigzag-row reverse">
+							<div class="zigzag-image">
+								<img src="images/pic04.jpg" alt="Anlık Bildirimler" />
+							</div>
+							<div class="zigzag-content">
+								<span class="icon solid major fa-lock accent5"></span>
 								<h3>Anlık Bildirimler</h3>
-								<p>Hedef fiyatınıza ulaşıldığında veya ani düşüşlerde telefonunuza gelen bildirimle anında haberdar olun.</p>
-							</section>
+								<p>Hedef fiyatınıza ulaşıldığında veya ani düşüşlerde telefonunuza gelen bildirimle anında haberdar olun. Doğru fiyatı asla kaçırmayın.</p>
+							</div>
 						</div>
+
 					</div>
-
 				</section>
 
+				<!-- Mağazalar -->
+				<section class="box special stores-box">
+					<span class="icon solid major fa-store accent2" style="display:block; margin-bottom: 0.5em;"></span>
+					<h3>Her Sitede Çalışır</h3>
+					<p>Türkiye'nin önde gelen e-ticaret sitelerinin tamamıyla uyumludur. Ürün linkini paylaşmanız yeterli.</p>
+				</section>
+
+			</section>
+
+			<!-- CTA -->
 			<section id="cta">
-					<h2>Hemen Takip Etmeye Başlayın</h2>
-					<p>Doğru fiyat, doğru zaman, mutlu alışveriş. Fiyatik ile kontrol sizde.</p>
-					<p><strong>İletişim:</strong> fiyatikapp@gmail.com</p>
-				</section>
+				<h2>Hemen Takip Etmeye Başlayın</h2>
+				<p>Doğru fiyat, doğru zaman, mutlu alışveriş. Fiyatik ile kontrol sizde.</p>
+				<ul class="actions special">
+					<li>
+						<a href="https://play.google.com/store/apps/details?id=com.pathev.fiyatik" target="_blank" class="button primary">
+							<i class="icon brands fa-google-play"></i>&nbsp; Google Play'den İndir
+						</a>
+					</li>
+				</ul>
+				<p><strong>İletişim:</strong> fiyatikapp@gmail.com</p>
+			</section>
 
+			<!-- Footer -->
 			<footer id="footer">
-					<ul class="copyright">
-						<li>&copy; 2026 Fiyatik. Tüm hakları saklıdır.</li>
-						<li><a href="gizlilik.html">Gizlilik Politikası</a></li>
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
+				<ul class="copyright">
+					<li>&copy; 2026 Fiyatik. Tüm hakları saklıdır.</li>
+					<li><a href="gizlilik.html">Gizlilik Politikası</a></li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
 
 		</div>
 
 		<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
