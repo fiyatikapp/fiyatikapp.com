@@ -1,13 +1,21 @@
-
 /* ============================================================
    FİYATİK TEMA OVERRİDE - main.css sonuna ekle
    ============================================================ */
 
 /* Genel metin rengi daha koyu */
 body, input, select, textarea {
-    color: #000000 !important;
+    color: #555;
 }
 
+/* Açıklama metinleri - koyu siyah */
+p,
+li,
+span:not(.button):not(.icon),
+div:not(.button):not(.icon):not(#banner):not(#cta) {
+    color: #222222;
+}
+
+/* Başlıklar */
 h1, h2, h3, h4, h5, h6 {
     color: #2a0a5e;
 }
@@ -78,8 +86,10 @@ input[type="button"].primary:active,
     text-shadow: 0 2px 20px rgba(123, 47, 190, 0.6);
 }
 
-#banner p {
-    color: rgba(255,255,255,0.92) !important;
+#banner p,
+#banner li,
+#banner span {
+    color: #ffffff !important;
 }
 
 /* Banner butonları */
@@ -127,8 +137,10 @@ input[type="button"].primary:active,
     color: #ffffff !important;
 }
 
-#cta p {
-    color: rgba(255,255,255,0.88) !important;
+#cta p,
+#cta li,
+#cta span {
+    color: #ffffff !important;
 }
 
 #cta strong {
